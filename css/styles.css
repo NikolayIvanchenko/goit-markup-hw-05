@@ -623,6 +623,7 @@ img {
 
 .review-form-field-label {
   color: #8e8f99;
+  display: block;
   font-size: 12px;
   line-height: 1.17em;
   letter-spacing: 0.04em;
@@ -639,6 +640,8 @@ img {
   border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
   background-color: transparent;
   padding-left: 38px;
+  transition: border-color 250ms linear;
+  outline: 0px solid transparent;
 }
 
 .review-form-input-wrapper {
@@ -651,5 +654,31 @@ img {
   left: 24px;
   transform: translateY(-50%);
   fill: #2e2f42;
+  transition: fill 250ms linear;
+}
+
+.review-form-input:focus {
+  border-color: #4d5ae5;
+}
+
+.review-form-input:focus + .review-form-input-icon {
+  fill: #4d5ae5;
+}
+
+.review-form-comment {
+  /* text-aria */
+  height: 120px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  resize: none;
+  transition: border-color 250ms linear;
+  outline: 0px solid transparent;
+  border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+}
+
+.review-form-comment:focus {
+  border-color: #4d5ae5;
 }
 /* backdrop */
