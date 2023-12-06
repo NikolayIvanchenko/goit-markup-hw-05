@@ -666,7 +666,6 @@ img {
 }
 
 .review-form-comment {
-  /* text-aria */
   height: 120px;
   width: 100%;
   border-radius: 4px;
@@ -678,7 +677,39 @@ img {
   border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
 }
 
+.review-form-comment::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.text-aria {
+  color: rgba(46, 47, 66, 0.4);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.17em;
+  letter-spacing: 0.04em;
+}
+
 .review-form-comment:focus {
   border-color: #4d5ae5;
 }
+
+.review-form-own-checkbox {
+  width: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.review-form-checkbox:checked
+  + .review-form-checkbox-lebel
+  > .review-form-own-checkbox {
+  background-color: #404bbf;
+  border-color: #404bbf;
+}
+
 /* backdrop */
