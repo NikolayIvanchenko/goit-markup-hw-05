@@ -558,10 +558,19 @@
             </li>
           </ul>
         </div>
+        <div class="form-footer">
+          <form class="footer-form">
+            <label for="email-footer">Subscribe
+            <input class="imput-footer"  type="email" id="email-footer" placeholder="E-mail">
+            </label>
+                    <button class="footer-form-btn" type="submit"></button>
+
+          </form>
+        </div>
       </div>
     </footer>
     <!-- backdrop -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
    <div class="modal">
        <button class="modal-close-btn">
           <svg class="modal-close-btn-icon" width="24" height="24" aria-label="close modal icon">
@@ -605,16 +614,17 @@
           <textarea  class="review-form-comment text-aria" name="user-comment" id="user-comment" placeholder="Text input" required></textarea>
         </div>
         <div class="review-form-checkbox-wrapper">
-          <input class="review-form-checkbox" id="user-privacy-policy " name="user-privacy-policy"  type="checkbox" value="true" required >
+          <input class="review-form-checkbox visually-hidden  " id="user-privacy-policy" name="user-privacy-policy"  type="checkbox" value="true" required >
           <label class="review-form-checkbox-lebel" for="user-privacy-policy" >
             <span class="review-form-own-checkbox">
               <svg class="review-form-own-checkbox-icon" width="10" height="8"  aria-label="checkmark icon">
                 <use href="./images/icons.svg#icon-checkmark"></use>
               </svg>
             </span>
-            I accept the terms and conditions of the <a href="">Privacy Policy</a></label>
-          <button class="review-form-submit-btn" type="submit">Send</button>
+            I accept the terms and conditions of the <a class="accent-color" href="">Privacy Policy</a></label>
         </div>
+        <button class="review-form-submit-btn" type="submit">Send</button>
+
        </form>
    </div>
    <!-- backdrop -->
