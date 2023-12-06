@@ -712,4 +712,13 @@ img {
   border-color: #404bbf;
 }
 
+.review-form-own-checkbox-icon {
+  opacity: 0;
+}
+
+.review-form-checkbox:checked
+  + .review-form-checkbox-lebel
+  > .review-form-own-checkbox-icon {
+  opacity: 1;
+}
 /* backdrop */
