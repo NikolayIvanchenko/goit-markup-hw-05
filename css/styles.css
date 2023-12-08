@@ -642,7 +642,7 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
 }
 
 .modal-close-btn {
@@ -681,8 +681,8 @@ img {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.2em;
   margin-bottom: 16px;
+  letter-spacing: 0.02em;
 }
 
 .review-form-field-label {
@@ -695,6 +695,7 @@ img {
 }
 
 .review-form-field-wrapper {
+  margin-bottom: 8px;
   margin-bottom: 16px;
   padding: 72px 24px 24px 24px;
 }
@@ -774,10 +775,14 @@ img {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   justify-content: center;
   height: 16px;
-  border: 1px solid black;
   cursor: pointer;
   fill: transparent;
   margin-right: 8px;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  fill: #ffffff;
 }
 
 .review-form-checkbox:checked
