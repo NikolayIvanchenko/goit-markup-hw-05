@@ -858,7 +858,7 @@ img {
   color: #4d5ae5;
 }
 
-.input:checked + label > span {
+.review-form-checkbox:checked + label > .review-form-own-checkbox {
   fill: #f4f4fd;
   border: none;
 }
