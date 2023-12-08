@@ -858,5 +858,10 @@ img {
   color: #4d5ae5;
 }
 
+.input:checked + label > span {
+  fill: #f4f4fd;
+  border: none;
+}
+
 /* backdrop */
 /* is-open */
